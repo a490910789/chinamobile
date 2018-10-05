@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.test.bus.mapper.AccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.test.bus.domain.Account">
+        <id column="aid" property="aid" />
+        <result column="person" property="person" />
+        <result column="address" property="address" />
+        <result column="balance" property="balance" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        aid, person, address, balance
+    </sql>
+   	<!-- 分页+模糊查询 -->
+	<select id="queryForPage" parameterType="account"
+		resultType="account">
+		select * from bus_account
+		<where>
+			<if test=" aid!='' and aid!=null">
+				and aid = #{aid}
+			</if>
+		</where>
+	</select>
+</mapper>

@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:44 +0800] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/ HTTP/1.1" 200 3784 http-bio-8080-exec-7 240
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/css/public.css HTTP/1.1" 304 - http-bio-8080-exec-2 18
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/layui/css/layui.css HTTP/1.1" 304 - http-bio-8080-exec-8 18
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/js/cache.js HTTP/1.1" 304 - http-bio-8080-exec-6 17
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/layui/layui.js HTTP/1.1" 304 - http-bio-8080-exec-5 18
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/layui/lay/modules/form.js HTTP/1.1" 304 - http-bio-8080-exec-5 4
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/images/code.jpg HTTP/1.1" 304 - http-bio-8080-exec-4 52
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/layui/lay/modules/layer.js HTTP/1.1" 304 - http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/images/face.jpg HTTP/1.1" 304 - http-bio-8080-exec-3 93
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1" 304 - http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/layui/lay/modules/jquery.js HTTP/1.1" 304 - http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [30/Sep/2018:08:18:51 +0800] "GET /chinamobile/resources/images/login_bg.jpg HTTP/1.1" 304 - http-bio-8080-exec-8 78

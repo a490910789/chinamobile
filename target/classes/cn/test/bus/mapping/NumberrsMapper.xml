@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.test.bus.mapper.NumberrsMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap"
+		type="cn.test.bus.domain.Numberrs">
+		<id column="phonenumber" property="phonenumber" />
+		<result column="phonetype" property="phonetype" />
+		<result column="carnumber" property="carnumber" />
+		<result column="available" property="available" />
+	</resultMap>
+
+	<!-- 通用查询结果列 -->
+	<sql id="Base_Column_List">
+		phonenumber, phonetype, carnumber, available
+	</sql>
+	
+	<!-- 分页+模糊查询 -->
+	<select id="queryForPage" parameterType="numberrs"
+		resultType="numberrs">
+		select * from bus_numberrs
+		<where>
+			<if test="phonenumber!=null">
+				and phonenumber like "%"#{phonenumber}"%"
+			</if>
+			<if test="phonetype!=null">
+				and phonetype like "%"#{phonetype}"%"
+			</if>
+			<if test="available!=null">
+				and available=#{available}
+			</if>
+		</where>
+	</select>
+</mapper>
